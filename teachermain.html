@@ -52,7 +52,7 @@
 
   <div class="content">
     <div class="content_resize">
-      <div class="mainbar">
+<!--       <div class="mainbar">
         <div class="article">
           <p class="infopost style3">Welcome to Teacher</p>
           <div class="clr"></div>
@@ -67,26 +67,62 @@
           <h2>&nbsp;</h2>
           <div class="clr"></div>
         </div>
-      </div>
-      <div class="sidebar">
+      </div> -->
+            <div class="sidebar">
         
         <div class="gadget">
           <h2 class="star"><span>Teacher</span> Menu</h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-            <li><a href="teachermain.html">Home</a></li>
+<!--             <li><a href="teachermain.html">Home</a></li>
             <li><a href="tviewtime.php">View Time Table</a></li>  
 			<li><a href="tedittime.php">Edit Teacher Table</a></li> 
 			<li><a href="teacherlist.php">View Teacher List</a></li>
                         <li><a href="updatemarks.php">Update Student Marks</a></li>
-                        <li><a href="tviewstudentmarks.php">View Students Marks</a></li>
+                        <li><a href="tviewstudentmarks.php">View Students Marks</a></li> -->
             <li><a href="index.html">Logout</a></li>
           </ul>
         </div>
         <div class="gadget">
-          <h2 class="star">&nbsp;</h2>
         </div>
       </div>
+      <div style="width: 100%;
+					height: 100%;">
+			<style type="text/css">
+				.parent { 
+					width: 100%;
+					height: 100%;
+						display: grid; 
+						grid-template-columns: repeat(3, 1fr); 
+						grid-template-rows: repeat(2, 1fr); 
+						grid-column-gap: 10px;
+						grid-row-gap: 10px; 
+				} 
+				.dabba{
+						min-width: 150px;
+						min-height: 200px;
+					width: 100%;
+					height: 100%;
+						border: 1px solid purple;
+				}
+				.dabba_a{
+				font-size: 25px;
+				font-family: fantasy; 
+				color: black;
+				padding-top: 50%;
+				padding-left: 20%;
+				}
+			</style>
+			<div class="parent"> 
+				<div class="dabba" style="background-image: url('images/slider/3.jpg'); background-size: cover; "> <a href="teachermain.html"><div class="dabba_a">Home</div></a> </div> 
+				<div class="dabba" style="background-image: url('images/slider/4.jpg'); background-size: cover; "> <a href="tviewtime.php"><div class="dabba_a">View Time Table</div></a> </div> 
+				<div class="dabba" style="background-image: url('images/slider/6.jpg'); background-size: cover; "> <a href="tedittime.php"><div class="dabba_a">Edit Teacher Table</div></a> </div>  
+				<div class="dabba" style="background-image: url('images/slider/4.jpg'); background-size: cover; "> <a href="teacherlist.php"><div class="dabba_a">View Teacher List</div></a> </div> 
+				<div class="dabba" style="background-image: url('images/slider/33.jpg'); background-size: cover; "> <a href="updatemarks.php"><div class="dabba_a">Update Student Marks</div></a> </div> 
+				<div class="dabba" style="background-image: url('images/slider/3.jpg'); background-size: cover; "> <a href="tviewstudentmarks.php"><div class="dabba_a">View Students Marks</div></a> </div>
+			</div> 
+		</div>
+
       <div class="clr"></div>
     </div>
   </div>
