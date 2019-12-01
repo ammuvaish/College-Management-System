@@ -45,6 +45,31 @@
 		  
 		  padding-left: 8px;
 	</style>
+				<style type="text/css">
+				.parent { 
+					width: 100%;
+					height: 100%;
+						display: grid; 
+						grid-template-columns: repeat(3, 1fr); 
+						grid-template-rows: repeat(1, 1fr); 
+						grid-column-gap: 10px;
+						grid-row-gap: 10px; 
+				} 
+				.dabba{
+						min-width: 150px;
+						min-height: 200px;
+					width: 100%;
+					height: 100%;
+						border: 1px solid purple;
+				}
+				.dabba_a{
+				font-size: 25px;
+				font-family: fantasy; 
+				color: black;
+				padding-top: 40%;
+				padding-left: 40%;
+				}
+			</style>
 </head>
 <body>
 	<div class="main">
@@ -77,30 +102,25 @@
 	  </div>
 
 	  <div class="content">
-	    <div class="content_resize">
-	      <div class="mainbar">
-	        <div class="article">
-	          <p class="infopost style3">Welcome to Admin</p>
-	          <div class="clr"></div>
-	         
-	          <div class="img" align="center"><img src="images/img2.jpg" width="177" height="213" alt="" class="fl" /></div>
-			
-	          <div class="post_content">
-	            <p align="justify"> </p>
-	          </div>
-	        </div>
-	        <div class="article">
-	          <h2>&nbsp;</h2>
-	          <div class="clr"></div>
-	        </div>
-	      </div>
-	      <div class="sidebar">
+	  	<div class="parent"><div class="sidebar" style="width: 100%;">
 	        
 	        <div class="gadget">
 	          <h2 class="star"><span>Admin</span> Menu</h2>
 	          <div class="clr"></div>
 	          <ul class="sb_menu">
 	            <li><a href="adminmain.html">Home</a></li>
+	              
+	          </ul>
+	        </div>
+	    </div></div>
+	    <div class="content_resize parent" style="width: 100%; background:unset;">
+
+	      <div class="sidebar" style="width: 100%;">
+	        
+	        <div class="gadget">
+	          <div class="clr"></div>
+	          <ul class="sb_menu">
+				<div class="dabba" style="background-image: url('images/slider/33.jpg'); background-size: cover; ">  </div> 
 	              <button class="dropdown-btn">Teacher
 	              <i class="fa fa-caret-down"></i>
 	              </button>
@@ -117,7 +137,20 @@
 	                <li><a href="asstrdept.php">Assigns teacher to department</a></li>
 				    <li><a href="asstrsec.php">Assigns teacher to a section</a></li>
 	                  </ul></div>
+
+	          </ul>
+	        </div>
+	        <div class="gadget">
+	          <h2 class="star">&nbsp;</h2>
+	        </div>
+	      </div>
+	      <div class="sidebar" style="width: 100%;">
+	        
+	        <div class="gadget">
+	          <div class="clr"></div>
+	          <ul class="sb_menu">
 	            
+				<div class="dabba" style="background-image: url('images/slider/33.jpg'); background-size: cover; "> </div> 
 	            <button class="dropdown-btn">Student
 	              <i class="fa fa-caret-down"></i>
 	              </button>
@@ -129,7 +162,20 @@
 	                 <li><a href="viewstudent.php">View Students</a></li>
 				     <li><a href="assstsec.php">Assigns students to section</a></li>
 	                  </ul></div>
+	            </ul>
+	        </div>
+	        <div class="gadget">
+	          <h2 class="star">&nbsp;</h2>
+	        </div>
+	      </div>
+
+	      <div class="sidebar" style="width: 100%;">
+	        
+	        <div class="gadget">
+	          <div class="clr"></div>
+	          <ul class="sb_menu">
 	            
+				<div class="dabba" style="background-image: url('images/slider/33.jpg'); background-size: cover; ">  </div> 
 	            <button class="dropdown-btn">Others
 	              <i class="fa fa-caret-down"></i>
 	              </button>
@@ -144,7 +190,6 @@
 	                    <li><a href="viewsubjects.php">View Subjects</a></li>
 	                  </ul></div>
 	             
-	             <li><a href="index.html">Logout</a></li>
 	          </ul>
 	        </div>
 	        <div class="gadget">
